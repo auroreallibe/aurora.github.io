@@ -4,7 +4,7 @@ import { Icon } from 'astro-icon/components'
 const { src = '/portrait-aa.png' } = Astro.props
 ---
 
-<section class="hero my-24">
+<section class="hero my-12">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
@@ -12,16 +12,17 @@ const { src = '/portrait-aa.png' } = Astro.props
           <slot><span class="text-gradient">Portfolio</span> Aurore A.</slot>
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
-            <Icon name="ion:star-outline" />
-            Star on GitHub
+          <a class="button has-icon" href="https://www.linkedin.com/in/aurore-allibe-0221867/" target="_blank">
+            <Icon name="mdi:linkedin" />
+            Mon linkedin
           </a>
           <a
             class="button has-icon color-secondary"
-            href="https://github.com/markteekman/accessible-astro-starter/blob/main/README.md"
+            href="/CV-Designer-Allibe-Aurore.pdf"
+            target="_blank"
           >
-            <Icon name="ion:bookmark-outline" />
-            Read the Docs
+            <Icon name="mdi:user" />
+            Téléchargez mon CV
           </a>
         </div>
       </div>

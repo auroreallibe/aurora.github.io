@@ -2,43 +2,35 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
+import Skill from '../components/Skill.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="my-64">
+  <section class="my-24">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Features</h2>
+      <h2 class="mb-16 text-6xl">Compétences</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="mdi:tailwind" title="HTML">
+          Intégration HTML, dans le soucis d'une intégration sémantique et accessible.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:looks" title="CSS">
+          Le CSS porte de mieux en mieux le terme de langage de programmation. Sa puissance ne fait que croître et nous simplifie grandement la vie.
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:wheelchair-accessibility" title="Accessibilité">
+          Sensible à ce sujet j'aimerais porter ces valeurs pour nous ouvrir un web plus accessible.
         </Feature>
-        <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+        <Feature icon="mdi:shield-user" title="Ergonomie">
+          La base de ma formation et de ma sensibilité, c'est d'offrir des interfaces user friendly 
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
+        <Feature icon="mdi:book-open-page-variant" title="Rédaction / SEO">
+          Concevoir des contenus à destination de votre public cible, tout en optimisant votre référencement et en surfant sur l'actualité de votre domaine. 
         </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
-        </Feature>
+        <Feature icon="mdi:brush" title="Créativité Digitale">
+          Créative dans l'âme. Sur écran ou sur papier, j'aime pouvoir y mettre ma "touche". :)
+        </Feature>        
       </div>
     </div>
   </section>
@@ -54,19 +46,46 @@ import ContentMedia from '../components/ContentMedia.astro'
   <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
     <h2>WCAG 2.1 AA Compliant</h2>
     <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
+      Créative et logique, ces deux traits de ma personnalité me permettent de trouver des solutions originales et efficaces, là où d'autres pourraient bloquer.
+J'aime écouter, faire parler puis guider pour créer des design, définir des parcours, construire des projets...
     </p>
   </ContentMedia>
-  <section class="mb-32 mt-64">
+ 
+  <section class="my-24">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
+      <h2 class="mb-16 text-6xl">Qualités / Soft skills</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Skill icon="mdi:hand-heart" title="Empathie">
+          Comprendre les gens devrait être considéré comme un super pouvoir.
+        </Skill>
+        <Skill icon="mdi:eye" title="Intuition">
+          Très utile pour deviner la fin des films, résoudre des énigmes et éviter les projets foireux.
+        </Skill>
+        <Skill icon="mdi:smiley" title="Sourire">
+          Si vous avez eu des collègues qui tiraient l’ambiance vers le bas. Vous y serez sensible. C’est mon mode par défaut. 
+        </Skill>
+        <Skill icon="mdi:people" title="Esprit d'équipe">
+          Seul on va plus vite, ensemble on va plus loin ! Prendre le relai sur un dossier hors de mon cadre pour soulager l’équipe. Aider un collègue sur un point bloquant... 
+          Faire front ensemble sans pointer inutilement un responsable. Voilà mon état d’esprit.
+        </Skill>
+        <Skill icon="mdi:idea" title="Dégourdie">
+          Autonome doit être plus souvent utilisé, mais autonome ne couvre pas l’ensemble du message que je souhaite vous faire passer. 
+          Dégourdie est le mot juste selon moi. Dans le sens: habile, ingénieuse.
+        </Skill>
+        <Skill icon="mdi:brain" title="Logique">
+          Logique, cartésienne, cela m'a beaucoup aidé dans mes études. Et cela reste vrai dans ma vie professionnelle. 
+        </Skill>        
+      </div>
+    </div>
+  </section>
+  <section class="mb-32 mt-12">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Quelques chiffres</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="520" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+        <Counter count="19ans" title="Expériences" sub="Professionnelles" />
+        <Counter count="2" title="Entreprises" sub="Employeurs" />
+        <Counter count="411" title="Contributions" sub="Sur Github" />
+        <Counter count="100+" title="Billets" sub="de blog" />
       </div>
     </div>
   </section>
